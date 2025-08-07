@@ -1,0 +1,224 @@
+/* client/src/App.css */
+
+body {
+  /* Default background, or base styles */
+  background-color: #f0f2f5; /* Keep a default light background */
+  background-image: none;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-color 0.3s ease, background-image 0.3s ease; /* Smooth transition */
+}
+
+body.auth-bg {
+  /* Background for Login and Register pages */
+  background-image: url('https://images.unsplash.com/photo-1510915228389-a18567576a60?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Replace with your image URL */
+  background-color: #a0a0a0; /* Fallback color */
+  background-attachment: fixed; /* Keeps background fixed when scrolling */
+}
+
+body.home-bg {
+  /* Background for the Home page */
+  background-color: #e0f2f7; /* A light blue/cyan color */
+  background-image: none; /* Ensure no image from other classes interferes */
+}
+
+body.default-bg {
+  /* A subtle background for other pages, if you want something different than the base */
+  background-color: #f0f2f5;
+  background-image: none;
+}
+
+/* If you want the content container to be slightly transparent or have its own style on top of the body background */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for content readability */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+.alert {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #3dabd3;
+  padding: 10px 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbar-links li {
+  margin-left: 20px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar-links button {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+}
+.navbar-links a:hover,
+.navbar-links button:hover {
+  text-decoration: underline;
+}
+
+/* Post Card */
+.post-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.post-card .post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.post-card .post-header .username {
+  font-weight: bold;
+  margin-left: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.post-card .post-content {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.post-card .post-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.post-card .post-actions {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+.post-card .post-actions button {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.post-card .post-actions button:hover {
+  text-decoration: underline;
+}
+
+.post-card .post-actions span {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Profile page */
+.profile-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-header h2 {
+  margin-bottom: 10px;
+}
+
+.profile-header .bio {
+  color: #555;
+}
+
+.profile-header .follow-button {
+  margin-top: 15px;
+}
+
+.profile-posts .post-card {
+  margin-top: 15px;
+}
